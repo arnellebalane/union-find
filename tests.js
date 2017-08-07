@@ -1,6 +1,12 @@
 const test = require('ava');
 const UnionFind = require('./index');
 
+test('constructor(size)', (t) => {
+    const uf = new UnionFind(5);
+    const expected = [0, 1, 2, 3, 4];
+    t.deepEqual(uf.nodes, expected);
+});
+
 test('union(source, target)', (t) => {
     const uf = new UnionFind(5);
 
