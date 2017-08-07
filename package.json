@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "union-find data structure implementation",
   "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
   "author": "Arnelle Balane <arnellebalane@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "ava": {
+    "files": [
+      "tests.js"
+    ]
+  }
 }
