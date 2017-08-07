@@ -1,5 +1,5 @@
 const test = require('ava');
-const UnionFind = require('./index');
+const UnionFind = require('../source/quick-find');
 
 test('constructor(size)', (t) => {
     const uf = new UnionFind(5);

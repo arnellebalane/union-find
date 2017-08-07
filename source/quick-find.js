@@ -16,10 +16,6 @@ class UnionFind {
     connected(source, target) {
         return this.nodes[source] === this.nodes[target];
     }
-
-    find(target) {
-
-    }
 }
 
 module.exports = UnionFind;
