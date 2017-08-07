@@ -14,7 +14,7 @@ class UnionFind {
     }
 
     connected(source, target) {
-        return true;
+        return this.nodes[source] === this.nodes[target];
     }
 
     find(target) {
