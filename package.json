@@ -1,0 +1,8 @@
+{
+  "name": "union-find",
+  "version": "1.0.0",
+  "description": "union-find data structure implementation",
+  "main": "index.js",
+  "author": "Arnelle Balane <arnellebalane@gmail.com>",
+  "license": "MIT"
+}
