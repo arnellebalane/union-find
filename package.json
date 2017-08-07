@@ -12,5 +12,8 @@
     "files": [
       "tests/**/*.js"
     ]
+  },
+  "devDependencies": {
+    "ava": "^0.21.0"
   }
 }
