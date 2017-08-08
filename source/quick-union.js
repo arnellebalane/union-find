@@ -7,16 +7,16 @@ class UnionFind {
     }
 
     union(source, target) {
-        const sourceRoot = this.getRoot(source);
-        const targetRoot = this.getRoot(target);
+        const sourceRoot = this.root(source);
+        const targetRoot = this.root(target);
         this.nodes[sourceRoot] = targetRoot;
     }
 
     connected(source, target) {
-        return this.getRoot(source) === this.getRoot(target);
+        return this.root(source) === this.root(target);
     }
 
-    getRoot(node) {
+    root(node) {
         while (this.nodes[node] !== node) {
             node = this.nodes[node];
         }
