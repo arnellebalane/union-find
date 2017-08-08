@@ -7,7 +7,9 @@ class UnionFind {
     }
 
     union(source, target) {
-        this.nodes[target] = source;
+        const sourceRoot = this.getRoot(source);
+        const targetRoot = this.getRoot(target);
+        this.nodes[sourceRoot] = targetRoot;
     }
 
     connected(source, target) {
