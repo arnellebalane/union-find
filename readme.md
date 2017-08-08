@@ -12,11 +12,12 @@ $ npm install git+https://git@github.com/arnellebalane/union-find.git
 
 ## Usage
 
-This package exposes two implementations of the Union-Find data structure.
+This package exposes three implementations of the Union-Find data structure.
 
 ```js
 import { QuickFindUF } from 'union-find';
 import { QuickUnionUF } from 'union-find';
+import { WeightedQuickUnionUF } from 'union-find';
 ```
 
 
