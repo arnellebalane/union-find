@@ -10,7 +10,7 @@ class UnionFind {
         const sourceGroup = this.nodes[source];
         const targetGroup = this.nodes[target];
         this.nodes = this.nodes.map((group) =>
-            group === targetGroup ? sourceGroup : group);
+            group === sourceGroup ? targetGroup : group);
     }
 
     connected(source, target) {
